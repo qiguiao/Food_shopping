@@ -1,0 +1,108 @@
+#shopping{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.shop-header{
+    width: 100%;
+    height: .9rem;
+    background: #fafafb;
+    position: relative;
+}
+.shop-header h1{
+    text-align: center;
+    line-height: .9rem;
+    font-size: .36rem;
+    color:#333;
+}
+.shop-header .shop-prev{
+    position:absolute;
+    left:.2rem;
+    top:.2rem;
+}
+.shop-header .shop-prev i{
+    font-size: .46rem;
+}
+.shop-compile{
+    position: absolute;
+    right:.2rem;
+    top:.2rem;
+    font-size: .36rem;
+}
+#shopping .shop-section{
+     width: 100%;
+    flex:1;
+    overflow-y:scroll; 
+}
+.shop-accounts{
+    position: fixed;
+    left:0;
+    bottom: .96rem;
+    width: 100%;
+    height: .9rem;
+    background: #fff;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+ .shop-accounts .all{
+    display: inline-block;
+    width: .55rem;
+    height: .55rem;
+    border:1px solid #c9c9c9;
+    border-radius: 50%;
+    position: relative;
+    /* top:.15rem; */
+}
+.shop-accounts .all .all-active{
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+    background:#fc4141;
+    color: #fff;
+    border-radius: 50%;
+    font-size: .36rem;
+     margin-left: 4%;
+    margin-top: 4%; 
+    text-align: center;
+
+    
+}
+.shop-accounts .all .all-active::after{
+    content: '√'
+} 
+.shop-accounts u{
+    text-decoration: none;
+    line-height: .9rem;
+    font-size: .24rem;
+}
+.shop-accounts .calculate{
+    position:absolute;
+    right:0;
+    top:0;
+    width: 1.7rem;
+    height: .9rem;
+    background: #fc4141;
+    border:none;
+    font-size: .32rem;
+    color:#fff;
+}
+.shop-accounts .remove{
+    position:absolute;
+    right:0;
+    top:0;
+    width: 1.7rem;
+    height: .9rem;
+    background: #fc4141;
+    border:none;
+    font-size: .32rem;
+    color:#fff;
+}
+.shop-accounts .total{
+    position:absolute;
+    right:1.8rem;
+    top:0;
+}
+.shop-accounts .total b{
+     color: #fc4141;
+}
